@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vita Park — Chapada dos Veadeiros. Um santuário de natureza, bem-estar e conexão profunda." />
+  <title>Vita Park — Chapada dos Veadeiros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header id="header">
+  <a href="#hero" class="header-logo">
+    <img src="images/imagem_01.jpeg" alt="Vita Park Logo" />
+  </a>
+
+  <div class="header-right">
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#sobre"       data-i18n="nav.sobre">Sobre</a></li>
+        <li><a href="#experiencias" data-i18n="nav.exp">Experiências</a></li>
+        <li><a href="#vivencias"   data-i18n="nav.viv">Vivências</a></li>
+        <li><a href="#galeria"     data-i18n="nav.gal">Galeria</a></li>
+        <li><a href="#contato"     data-i18n="nav.con">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="lang-btn" id="langBtn" aria-label="Trocar idioma">EN</button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+  <ul>
+    <li><a href="#sobre"        data-i18n="nav.sobre">Sobre</a></li>
+    <li><a href="#experiencias" data-i18n="nav.exp">Experiências</a></li>
+    <li><a href="#vivencias"    data-i18n="nav.viv">Vivências</a></li>
+    <li><a href="#galeria"      data-i18n="nav.gal">Galeria</a></li>
+    <li><a href="#contato"      data-i18n="nav.con">Contato</a></li>
+  </ul>
+  <button class="lang-btn" id="langBtnMobile">EN</button>
+</nav>
+
+<!-- ============================================================
+     HERO — Carousel
+     ============================================================ -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-slides">
+    <div class="hero-slide active" style="background-image:url('images/imagem_17.jpeg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_18.jpeg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_16.jpeg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_08.jpeg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_07.jpeg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_39.jpg')"></div>
+    <div class="hero-slide"        style="background-image:url('images/imagem_31.jpeg')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow" data-i18n="hero.eyebrow">Chapada dos Veadeiros · Brasil</span>
+    <h1 class="hero-title">Vita Park</h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Natureza · Bem-estar · Conexão</p>
+    <a href="#sobre" class="hero-cta" data-i18n="hero.cta">
+      Descubra
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slides do carrossel"></div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOBRE
+     ============================================================ -->
+<section id="sobre" aria-labelledby="sobre-title">
+  <div class="container">
+    <div class="sobre-grid">
+      <div class="sobre-image fade-in">
+        <img src="images/imagem_02.jpeg" alt="Vita Park — Natureza e bem-estar" loading="lazy" />
+      </div>
+      <div class="sobre-text fade-in fade-in-delay-1">
+        <span class="section-label" data-i18n="sobre.label">Sobre Nós</span>
+        <h2 class="section-title" id="sobre-title" data-i18n="sobre.title">Um Santuário no Coração do Cerrado</h2>
+        <div class="divider"></div>
+        <p data-i18n="sobre.p1">
+          No pulsante coração do Cerrado brasileiro, dentro da mística Chapada dos Veadeiros, surge um convite. Mais do que um destino turístico, <strong>Vita Park</strong> revela-se como um tempo que pulsa reconexão profunda.
+        </p>
+        <p data-i18n="sobre.p2">
+          É mais que um lar compartilhado: um santuário oculto, um espaço em harmonia com o ritmo da natureza. Uma experiência orgânica, moldada por pessoas que vêm para viver, onde vida e atividade se entrelaçam naturalmente.
+        </p>
+        <p data-i18n="sobre.p3">
+          Convidamos você a descobrir a autenticidade da vida em meio a paisagens intocadas, sob o espetáculo de milhões de estrelas.
+        </p>
+        <div class="sobre-badge">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" color="#676127"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span data-i18n="sobre.badge">Chapada dos Veadeiros, Goiás — Brasil</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIÊNCIAS
+     ============================================================ -->
+<section id="experiencias" aria-labelledby="exp-title">
+  <div class="container">
+    <span class="section-label" data-i18n="exp.label">O que oferecemos</span>
+    <h2 class="section-title light" id="exp-title" data-i18n="exp.title">Experiências</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="experiencias-grid">
+
+    <!-- Card 1: Labirinto -->
+    <article class="exp-card fade-in" role="button" tabindex="0" aria-label="Abrir detalhes do Labirinto" onclick="openModal('modal-labirinto')">
+      <img src="images/imagem_03.jpeg" alt="Labirinto de Cristais" loading="lazy" />
+      <div class="exp-card-overlay">
+        <span class="exp-card-label" data-i18n="exp.lab.label">Meditação · Espiritualidade</span>
+        <h3 class="exp-card-title" data-i18n="exp.lab.title">Labirinto</h3>
+        <p class="exp-card-desc" data-i18n="exp.lab.desc">Uma jornada sagrada de reconexão interior inspirada no Labirinto de Chartres, com cristais e energia da terra.</p>
+        <span class="exp-card-btn" data-i18n="exp.btn">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </article>
+
+    <!-- Card 2: Akwatica -->
+    <article class="exp-card fade-in fade-in-delay-1" role="button" tabindex="0" aria-label="Abrir detalhes da Akwatica" onclick="openModal('modal-akwatica')">
+      <img src="images/imagem_04.jpeg" alt="Akwatica — Watsu" loading="lazy" />
+      <div class="exp-card-overlay">
+        <span class="exp-card-label" data-i18n="exp.ak.label">Aquático · Terapêutico</span>
+        <h3 class="exp-card-title" data-i18n="exp.ak.title">Akwatica</h3>
+        <p class="exp-card-desc" data-i18n="exp.ak.desc">Sessão individual de Watsu — uma experiência única de entrega e acolhimento na água aquecida.</p>
+        <span class="exp-card-btn" data-i18n="exp.btn">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </article>
+
+    <!-- Card 3: Laboratório de Movimento -->
+    <article class="exp-card fade-in fade-in-delay-2" role="button" tabindex="0" aria-label="Abrir detalhes do Laboratório de Movimento" onclick="openModal('modal-movimento')">
+      <img src="images/imagem_05.jpeg" alt="Laboratório de Movimento" loading="lazy" />
+      <div class="exp-card-overlay">
+        <span class="exp-card-label" data-i18n="exp.mov.label">Movimento · Corpo</span>
+        <h3 class="exp-card-title" data-i18n="exp.mov.title">Laboratório de Movimento</h3>
+        <p class="exp-card-desc" data-i18n="exp.mov.desc">Capoeira e Yoga — práticas de movimento que unem tradição, comunidade e presença.</p>
+        <span class="exp-card-btn" data-i18n="exp.btn">
+          Saiba mais
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     VIVÊNCIAS
+     ============================================================ -->
+<section id="vivencias" aria-labelledby="viv-title">
+  <div class="container">
+    <span class="section-label" data-i18n="viv.label">Imersões & Retiros</span>
+    <h2 class="section-title" id="viv-title" data-i18n="viv.title">Vivências</h2>
+    <div class="divider"></div>
+
+    <div class="vivencias-grid">
+
+      <!-- Card: TCA -->
+      <article class="viv-card fade-in" role="button" tabindex="0" aria-label="Abrir detalhes do TCA" onclick="openModal('modal-tca')">
+        <img src="images/imagem_06.jpeg" alt="TCA — Trabalho Corporal Aquático" loading="lazy" />
+        <div class="viv-card-overlay">
+          <span class="viv-card-label" data-i18n="viv.tca.label">Retiro · Aquático</span>
+          <h3 class="viv-card-title" data-i18n="viv.tca.title">TCA</h3>
+          <p class="viv-card-excerpt" data-i18n="viv.tca.excerpt">Trabalho Corporal Aquático — Desenvolvendo a nossa conexão com a água através de práticas terapêuticas e expressivas.</p>
+          <span class="viv-card-btn" data-i18n="viv.btn">
+            Explorar
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+
+      <!-- Card: VitaRoots -->
+      <article class="viv-card fade-in fade-in-delay-1" role="button" tabindex="0" aria-label="Abrir detalhes do VitaRoots" onclick="openModal('modal-vitaroots')">
+        <img src="images/imagem_38.jpg" alt="VitaRoots — Imersão Roots" loading="lazy" />
+        <div class="viv-card-overlay">
+          <span class="viv-card-label" data-i18n="viv.roots.label">Imersão · 5 dias</span>
+          <h3 class="viv-card-title" data-i18n="viv.roots.title">VitaRoots</h3>
+          <p class="viv-card-excerpt" data-i18n="viv.roots.excerpt">5 dias e 4 noites na Chapada dos Veadeiros. Um grupo exclusivo de 8 pessoas para uma reconexão profunda com a natureza.</p>
+          <span class="viv-card-btn" data-i18n="viv.btn">
+            Explorar
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALERIA
+     ============================================================ -->
+<section id="galeria" aria-labelledby="gal-title">
+  <div class="container">
+    <span class="section-label" data-i18n="gal.label">Momentos</span>
+    <h2 class="section-title" id="gal-title" data-i18n="gal.title">Galeria</h2>
+    <div class="divider"></div>
+  </div>
+
+  <div class="container">
+    <div class="galeria-grid">
+      <div class="galeria-item fade-in"><img src="images/imagem_09.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-1"><img src="images/imagem_10.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-2"><img src="images/imagem_11.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in"><img src="images/imagem_12.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-1"><img src="images/imagem_13.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-2"><img src="images/imagem_14.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in"><img src="images/imagem_15.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-1"><img src="images/imagem_19.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-2"><img src="images/imagem_21.jpg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in"><img src="images/imagem_22.jpg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-1"><img src="images/imagem_25.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-2"><img src="images/imagem_26.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in"><img src="images/imagem_29.jpeg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-1"><img src="images/imagem_30.jpg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in fade-in-delay-2"><img src="images/imagem_33.jpg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+      <div class="galeria-item fade-in"><img src="images/imagem_34.jpg" alt="Vita Park" loading="lazy" /><div class="galeria-item-overlay"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTATO
+     ============================================================ -->
+<section id="contato" aria-labelledby="con-title">
+  <div class="container">
+    <div class="contato-grid">
+
+      <div class="contato-info fade-in">
+        <span class="section-label" data-i18n="con.label">Fale Conosco</span>
+        <h2 class="section-title" id="con-title" data-i18n="con.title">Venha nos Visitar</h2>
+        <div class="divider"></div>
+        <p data-i18n="con.desc">Estamos na Chapada dos Veadeiros, prontos para receber você. Entre em contato para reservas, informações e parcerias.</p>
+
+        <div class="contato-links">
+          <a href="https://wa.me/5511961933599" class="contato-link" target="_blank" rel="noopener">
+            <span class="contato-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.37 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            </span>
+            +55 11 96193-3599
+          </a>
+          <a href="https://instagram.com/vitapark" class="contato-link" target="_blank" rel="noopener">
+            <span class="contato-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </span>
+            @vitapark
+          </a>
+          <a href="#" class="contato-link">
+            <span class="contato-link-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </span>
+            <span data-i18n="con.location">Chapada dos Veadeiros, Goiás</span>
+          </a>
+        </div>
+
+        <a href="https://wa.me/5511961933599?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20o%20Vita%20Park." class="wa-btn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.855L0 24l6.335-1.505A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.789 9.789 0 0 1-4.992-1.363l-.358-.213-3.758.892.938-3.64-.234-.374A9.79 9.79 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182 17.43 2.182 21.818 6.57 21.818 12c0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+          <span data-i18n="con.wa">Reservar via WhatsApp</span>
+        </a>
+      </div>
+
+      <form class="contato-form fade-in fade-in-delay-1" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name" data-i18n="form.name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome completo" data-i18n-placeholder="form.name.placeholder" required />
+        </div>
+        <div class="form-group">
+          <label for="email" data-i18n="form.email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="subject" data-i18n="form.subject">Assunto</label>
+          <input type="text" id="subject" name="subject" placeholder="Como podemos ajudar?" data-i18n-placeholder="form.subject.placeholder" />
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="form.message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Sua mensagem..." data-i18n-placeholder="form.message.placeholder" required></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-i18n="form.submit">Enviar Mensagem</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="images/imagem_01.jpeg" alt="Vita Park" />
+      </div>
+      <p class="footer-text" data-i18n="footer.copy">© 2025 Vita Park · Chapada dos Veadeiros · Todos os direitos reservados</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/vitapark" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/5511961933599" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.529 5.855L0 24l6.335-1.505A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.789 9.789 0 0 1-4.992-1.363l-.358-.213-3.758.892.938-3.64-.234-.374A9.79 9.79 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182 17.43 2.182 21.818 6.57 21.818 12c0 5.43-4.388 9.818-9.818 9.818z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     MODALS
+     ============================================================ -->
+
+<!-- Modal: Labirinto -->
+<div class="modal-backdrop" id="modal-labirinto" role="dialog" aria-modal="true" aria-labelledby="modal-labirinto-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-labirinto')" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-hero">
+      <img src="images/imagem_03.jpeg" alt="Labirinto de Cristais" />
+      <div class="modal-hero-overlay">
+        <span class="modal-hero-label">Meditação · Espiritualidade</span>
+        <h2 class="modal-hero-title" id="modal-labirinto-title">Labirinto</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p>No Vita Park, uma versão ao ar livre deste labirinto sagrado aguarda sob o vasto céu. Ele incorpora cristais colocados ao longo do caminho e em pontos-chave, ampliando a energia meditativa com as vibrações naturais da terra.</p>
+      <p>Gravado no piso da Catedral de Chartres, na França, desde o século XIII, o Labirinto de Chartres é um caminho unicursal de 260 metros que conduz ao centro sem escolhas ou becos sem saída — simbolizando a jornada da vida em direção a Deus.</p>
+      <p>Caminhar aqui mistura o antigo simbolismo espiritual com a beleza bruta da paisagem brasileira — convidando a uma lembrança mais profunda e enraizada em meio à natureza aberta.</p>
+      <ul>
+        <li>Recordar a presença de Deus em meio às confusões da vida</li>
+        <li>Refletir sobre a sua história à luz da graça</li>
+        <li>Lembrar perdas, curas e promessas renovadas</li>
+      </ul>
+      <p>A experiência inclui uma explicação guiada e uma caminhada pelo labirinto. Cerimônia de fogo, sopa e música ao vivo disponíveis como complemento opcional.</p>
+      <div class="modal-info-row">
+        <div class="modal-info-item">
+          <span>Duração</span>
+          <span>~2 horas</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Valor</span>
+          <span>A consultar</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Horários</span>
+          <span>A consultar</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Grupo</span>
+          <span>Individual ou grupo</span>
+        </div>
+      </div>
+      <a href="https://wa.me/5511961933599?text=Olá!%20Gostaria%20de%20inscrever%20no%20Labirinto." class="modal-cta" target="_blank" rel="noopener">
+        Inscrever via WhatsApp
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Akwatica -->
+<div class="modal-backdrop" id="modal-akwatica" role="dialog" aria-modal="true" aria-labelledby="modal-akwatica-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-akwatica')" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-hero">
+      <img src="images/imagem_20.jpg" alt="Akwatica — Watsu" />
+      <div class="modal-hero-overlay">
+        <span class="modal-hero-label">Aquático · Terapêutico</span>
+        <h2 class="modal-hero-title" id="modal-akwatica-title">Akwatica</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <p>Uma sessão individual de <strong style="color:var(--gold)">Watsu</strong> é uma experiência única de entrega e acolhimento na água. A sessão acontece em uma piscina aquecida, onde a temperatura favorece o relaxamento profundo e a sensação de segurança.</p>
+      <ul>
+        <li><strong>Ambientação</strong> — piscina aquecida para relaxamento profundo</li>
+        <li><strong>Acolhimento pelo terapeuta</strong> — movimentos fluidos de alongamentos, balanços e flutuações</li>
+        <li><strong>Entrega corporal e emocional</strong> — tensões físicas se dissolvem e emoções emergem naturalmente</li>
+        <li><strong>Dimensão meditativa</strong> — estados de presença, silêncio interno e conexão com o próprio corpo</li>
+        <li><strong>Integração final</strong> — sensação de leveza, expansão e renovação</li>
+      </ul>
+      <p>Cada sessão é personalizada: o terapeuta ajusta os movimentos conforme as necessidades do participante, criando um espaço seguro para que o corpo e a mente possam se abrir ao processo de cura.</p>
+      <div class="modal-info-row">
+        <div class="modal-info-item">
+          <span>Duração</span>
+          <span>~60–90 min</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Valor</span>
+          <span>A consultar</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Horários</span>
+          <span>A consultar</span>
+        </div>
+        <div class="modal-info-item">
+          <span>Modalidade</span>
+          <span>Individual</span>
+        </div>
+      </div>
+      <a href="https://wa.me/5511961933599?text=Olá!%20Gostaria%20de%20agendar%20uma%20sessão%20Akwatica." class="modal-cta" target="_blank" rel="noopener">
+        Agendar via WhatsApp
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Laboratório de Movimento -->
+<div class="modal-backdrop" id="modal-movimento" role="dialog" aria-modal="true" aria-labelledby="modal-movimento-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-movimento')" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-hero">
+      <img src="images/imagem_05.jpeg" alt="Laboratório de Movimento" />
+      <div class="modal-hero-overlay">
+        <span class="modal-hero-label">Movimento · Corpo</span>
+        <h2 class="modal-hero-title" id="modal-movimento-title">Laboratório de Movimento</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tabs">
+        <button class="modal-tab-btn active" onclick="switchTab(this, 'tab-capoeira')">Capoeira</button>
+        <button class="modal-tab-btn" onclick="switchTab(this, 'tab-yoga')">Yoga</button>
+      </div>
+
+      <div class="modal-tab-content active" id="tab-capoeira">
+        <img src="images/imagem_23.jpg" alt="Capoeira" style="width:100%;height:220px;object-fit:cover;border-radius:4px;margin-bottom:24px;" loading="lazy" />
+        <p>Descubra como o jogo da capoeira é muito mais do que movimento. É uma conversa viva, onde cada gesto faz uma pergunta, cada resposta conta uma história, e até uma piada pode surgir no balanço do corpo e no som do berimbau.</p>
+        <p>É diálogo, é narrativa, é improviso — sempre enraizado no contexto maior da roda, que une tradição, música e comunidade.</p>
+        <div class="modal-info-row">
+          <div class="modal-info-item"><span>Valor</span><span>A consultar</span></div>
+          <div class="modal-info-item"><span>Horários</span><span>A consultar</span></div>
+          <div class="modal-info-item"><span>Nível</span><span>Todos os níveis</span></div>
+        </div>
+        <a href="https://wa.me/5511961933599?text=Olá!%20Tenho%20interesse%20nas%20aulas%20de%20Capoeira." class="modal-cta" target="_blank" rel="noopener">
+          Inscrever via WhatsApp
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="modal-tab-content" id="tab-yoga">
+        <img src="images/imagem_24.jpeg" alt="Yoga" style="width:100%;height:220px;object-fit:cover;border-radius:4px;margin-bottom:24px;" loading="lazy" />
+        <p>Na yoga, cada prática é um convite para habitar o momento presente. Os movimentos nos conduzem por estados que vão da ativação e do esforço até a regulação e o relaxamento, como uma dança entre energia e repouso.</p>
+        <p>Esse espaço abre caminho para aprofundar a relação entre corpo, mente, cognição e espírito. Cada sessão nasce de uma escuta inicial e é cuidadosamente desenhada para o grupo, tornando-se uma jornada única de presença, integração e expansão interior.</p>
+        <div class="modal-info-row">
+          <div class="modal-info-item"><span>Valor</span><span>A consultar</span></div>
+          <div class="modal-info-item"><span>Horários</span><span>A consultar</span></div>
+          <div class="modal-info-item"><span>Nível</span><span>Todos os níveis</span></div>
+        </div>
+        <a href="https://wa.me/5511961933599?text=Olá!%20Tenho%20interesse%20nas%20aulas%20de%20Yoga." class="modal-cta" target="_blank" rel="noopener">
+          Inscrever via WhatsApp
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: TCA -->
+<div class="modal-backdrop" id="modal-tca" role="dialog" aria-modal="true" aria-labelledby="modal-tca-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-tca')" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-hero">
+      <img src="images/imagem_06.jpeg" alt="TCA — Trabalho Corporal Aquático" />
+      <div class="modal-hero-overlay">
+        <span class="modal-hero-label">Retiro · Aquático</span>
+        <h2 class="modal-hero-title" id="modal-tca-title">TCA — Trabalho Corporal Aquático</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <img src="images/imagem_27.jpg" alt="TCA" style="width:100%;height:200px;object-fit:cover;border-radius:4px;margin-bottom:28px;" loading="lazy" />
+      <p><strong style="color:var(--gold)">Desenvolvendo a nossa Conexão com a Água</strong></p>
+      <p>Um retiro para explorar a conexão com a água por meio de práticas terapêuticas e expressivas. TCA ou Trabalho Corporal Aquático é o conjunto de atividades corporais que podem ser realizadas com a água.</p>
+      <p>Este retiro de 12 horas é dividido em 4 encontros de 3 horas, combinando teoria (25%) e prática (75%) para promover uma conexão profunda com a água por meio de vivências terapêuticas, expressivas e estruturadas.</p>
+      <p>São expostas técnicas de como proporcionar o suporte correto ao corpo flutuante e técnicas de movimento para que o trabalho seja fluido e em concordância com a água.</p>
+      <div class="modal-info-row">
+        <div class="modal-info-item"><span>Formato</span><span>4 encontros de 3h</span></div>
+        <div class="modal-info-item"><span>Total</span><span>12 horas</span></div>
+        <div class="modal-info-item"><span>Valor</span><span>A consultar</span></div>
+        <div class="modal-info-item"><span>Reserva</span><span>Via WhatsApp</span></div>
+      </div>
+      <a href="https://wa.me/5511961933599?text=Olá!%20Tenho%20interesse%20no%20retiro%20TCA." class="modal-cta" target="_blank" rel="noopener">
+        Reservar via WhatsApp
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: VitaRoots -->
+<div class="modal-backdrop" id="modal-vitaroots" role="dialog" aria-modal="true" aria-labelledby="modal-vitaroots-title">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('modal-vitaroots')" aria-label="Fechar">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-hero">
+      <img src="images/imagem_38.jpg" alt="VitaRoots" />
+      <div class="modal-hero-overlay">
+        <span class="modal-hero-label">Imersão · 5 dias</span>
+        <h2 class="modal-hero-title" id="modal-vitaroots-title">VitaRoots</h2>
+      </div>
+    </div>
+    <div class="modal-body">
+      <img src="images/imagem_40.jpg" alt="VitaRoots — Chapada dos Veadeiros" style="width:100%;height:200px;object-fit:cover;border-radius:4px;margin-bottom:28px;" loading="lazy" />
+      <p>A Imersão Roots é uma experiência única de <strong style="color:var(--gold)">5 dias e 4 noites na Chapada dos Veadeiros</strong>, voltada para o equilíbrio entre corpo, mente e espírito.</p>
+      <p>Com um grupo exclusivo de apenas <strong>8 pessoas</strong>, você terá a oportunidade de vivenciar atividades como meditação no Labirinto de Cristais, Watsu (imersão na água), corridas pelas montanhas, trilhas, banho de rio e momentos de conexão profunda com a natureza.</p>
+      <ul>
+        <li>Meditação no Labirinto de Cristais</li>
+        <li>Watsu — imersão na água</li>
+        <li>Corridas pelas montanhas e trilhas</li>
+        <li>Banho de rio</li>
+        <li>Momentos de conexão profunda com a natureza</li>
+        <li>Transporte local incluído</li>
+        <li>Refeições completas incluídas</li>
+        <li>Estrutura de camping</li>
+        <li>Todas as atividades guiadas por profissionais experientes</li>
+      </ul>
+      <div class="modal-info-row">
+        <div class="modal-info-item"><span>Duração</span><span>5 dias / 4 noites</span></div>
+        <div class="modal-info-item"><span>Grupo</span><span>Máx. 8 pessoas</span></div>
+        <div class="modal-info-item"><span>Valor</span><span>A consultar</span></div>
+        <div class="modal-info-item"><span>Inclui</span><span>Transporte + refeições</span></div>
+      </div>
+      <a href="https://wa.me/5511961933599?text=Olá!%20Tenho%20interesse%20na%20imersão%20VitaRoots." class="modal-cta" target="_blank" rel="noopener">
+        Reservar via WhatsApp
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+/* ---- i18n ---- */
+const translations = {
+  pt: {
+    'nav.sobre': 'Sobre', 'nav.exp': 'Experiências', 'nav.viv': 'Vivências',
+    'nav.gal': 'Galeria', 'nav.con': 'Contato',
+    'hero.eyebrow': 'Chapada dos Veadeiros · Brasil',
+    'hero.subtitle': 'Natureza · Bem-estar · Conexão',
+    'hero.cta': 'Descubra',
+    'sobre.label': 'Sobre Nós',
+    'sobre.title': 'Um Santuário no Coração do Cerrado',
+    'sobre.p1': 'No pulsante coração do Cerrado brasileiro, dentro da mística Chapada dos Veadeiros, surge um convite. Mais do que um destino turístico, <strong>Vita Park</strong> revela-se como um tempo que pulsa reconexão profunda.',
+    'sobre.p2': 'É mais que um lar compartilhado: um santuário oculto, um espaço em harmonia com o ritmo da natureza. Uma experiência orgânica, moldada por pessoas que vêm para viver, onde vida e atividade se entrelaçam naturalmente.',
+    'sobre.p3': 'Convidamos você a descobrir a autenticidade da vida em meio a paisagens intocadas, sob o espetáculo de milhões de estrelas.',
+    'sobre.badge': 'Chapada dos Veadeiros, Goiás — Brasil',
+    'exp.label': 'O que oferecemos', 'exp.title': 'Experiências',
+    'exp.lab.label': 'Meditação · Espiritualidade', 'exp.lab.title': 'Labirinto',
+    'exp.lab.desc': 'Uma jornada sagrada de reconexão interior inspirada no Labirinto de Chartres, com cristais e energia da terra.',
+    'exp.ak.label': 'Aquático · Terapêutico', 'exp.ak.title': 'Akwatica',
+    'exp.ak.desc': 'Sessão individual de Watsu — uma experiência única de entrega e acolhimento na água aquecida.',
+    'exp.mov.label': 'Movimento · Corpo', 'exp.mov.title': 'Laboratório de Movimento',
+    'exp.mov.desc': 'Capoeira e Yoga — práticas de movimento que unem tradição, comunidade e presença.',
+    'exp.btn': 'Saiba mais',
+    'viv.label': 'Imersões & Retiros', 'viv.title': 'Vivências',
+    'viv.tca.label': 'Retiro · Aquático', 'viv.tca.title': 'TCA',
+    'viv.tca.excerpt': 'Trabalho Corporal Aquático — Desenvolvendo a nossa conexão com a água através de práticas terapêuticas e expressivas.',
+    'viv.roots.label': 'Imersão · 5 dias', 'viv.roots.title': 'VitaRoots',
+    'viv.roots.excerpt': '5 dias e 4 noites na Chapada dos Veadeiros. Um grupo exclusivo de 8 pessoas para uma reconexão profunda com a natureza.',
+    'viv.btn': 'Explorar',
+    'gal.label': 'Momentos', 'gal.title': 'Galeria',
+    'con.label': 'Fale Conosco', 'con.title': 'Venha nos Visitar',
+    'con.desc': 'Estamos na Chapada dos Veadeiros, prontos para receber você. Entre em contato para reservas, informações e parcerias.',
+    'con.location': 'Chapada dos Veadeiros, Goiás',
+    'con.wa': 'Reservar via WhatsApp',
+    'form.name': 'Nome', 'form.email': 'E-mail', 'form.subject': 'Assunto', 'form.message': 'Mensagem',
+    'form.name.placeholder': 'Seu nome completo', 'form.subject.placeholder': 'Como podemos ajudar?',
+    'form.message.placeholder': 'Sua mensagem...', 'form.submit': 'Enviar Mensagem',
+    'footer.copy': '© 2025 Vita Park · Chapada dos Veadeiros · Todos os direitos reservados'
+  },
+  en: {
+    'nav.sobre': 'About', 'nav.exp': 'Experiences', 'nav.viv': 'Retreats',
+    'nav.gal': 'Gallery', 'nav.con': 'Contact',
+    'hero.eyebrow': 'Chapada dos Veadeiros · Brazil',
+    'hero.subtitle': 'Nature · Wellness · Connection',
+    'hero.cta': 'Discover',
+    'sobre.label': 'About Us',
+    'sobre.title': 'A Sanctuary in the Heart of the Cerrado',
+    'sobre.p1': 'In the pulsing heart of the Brazilian Cerrado, within the mystical Chapada dos Veadeiros, an invitation emerges. More than a tourist destination, <strong>Vita Park</strong> reveals itself as a time that pulses deep reconnection.',
+    'sobre.p2': 'It is more than a shared home: a hidden sanctuary, a space in harmony with the rhythm of nature. An organic experience, shaped by people who come to live, where life and activity intertwine naturally.',
+    'sobre.p3': 'We invite you to discover the authenticity of life amid untouched landscapes, under the spectacle of millions of stars.',
+    'sobre.badge': 'Chapada dos Veadeiros, Goiás — Brazil',
+    'exp.label': 'What we offer', 'exp.title': 'Experiences',
+    'exp.lab.label': 'Meditation · Spirituality', 'exp.lab.title': 'Labyrinth',
+    'exp.lab.desc': 'A sacred journey of inner reconnection inspired by the Chartres Labyrinth, with crystals and earth energy.',
+    'exp.ak.label': 'Aquatic · Therapeutic', 'exp.ak.title': 'Akwatica',
+    'exp.ak.desc': 'Individual Watsu session — a unique experience of surrender and welcoming in warm water.',
+    'exp.mov.label': 'Movement · Body', 'exp.mov.title': 'Movement Lab',
+    'exp.mov.desc': 'Capoeira and Yoga — movement practices that unite tradition, community and presence.',
+    'exp.btn': 'Learn more',
+    'viv.label': 'Immersions & Retreats', 'viv.title': 'Retreats',
+    'viv.tca.label': 'Retreat · Aquatic', 'viv.tca.title': 'TCA',
+    'viv.tca.excerpt': 'Aquatic Body Work — Developing our connection with water through therapeutic and expressive practices.',
+    'viv.roots.label': 'Immersion · 5 days', 'viv.roots.title': 'VitaRoots',
+    'viv.roots.excerpt': '5 days and 4 nights in Chapada dos Veadeiros. An exclusive group of 8 people for a deep reconnection with nature.',
+    'viv.btn': 'Explore',
+    'gal.label': 'Moments', 'gal.title': 'Gallery',
+    'con.label': 'Get in Touch', 'con.title': 'Come Visit Us',
+    'con.desc': 'We are in Chapada dos Veadeiros, ready to welcome you. Contact us for bookings, information and partnerships.',
+    'con.location': 'Chapada dos Veadeiros, Goiás',
+    'con.wa': 'Book via WhatsApp',
+    'form.name': 'Name', 'form.email': 'Email', 'form.subject': 'Subject', 'form.message': 'Message',
+    'form.name.placeholder': 'Your full name', 'form.subject.placeholder': 'How can we help?',
+    'form.message.placeholder': 'Your message...', 'form.submit': 'Send Message',
+    'footer.copy': '© 2025 Vita Park · Chapada dos Veadeiros · All rights reserved'
+  }
+};
+
+let currentLang = 'pt';
+
+function setLang(lang) {
+  currentLang = lang;
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key]) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (t[key]) el.placeholder = t[key];
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.textContent = lang === 'pt' ? 'EN' : 'PT';
+  });
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+}
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => setLang(currentLang === 'pt' ? 'en' : 'pt'));
+});
+
+/* ---- Hamburger ---- */
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = hamburger.classList.toggle('open');
+  mobileNav.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileNav.setAttribute('aria-hidden', !isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+});
+
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', false);
+    mobileNav.setAttribute('aria-hidden', true);
+    document.body.style.overflow = '';
+  });
+});
+
+/* ---- Header scroll ---- */
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+/* ---- Hero Carousel ---- */
+const slides = document.querySelectorAll('.hero-slide');
+const dotsContainer = document.getElementById('heroDots');
+let currentSlide = 0;
+let carouselTimer;
+
+slides.forEach((_, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+  dot.setAttribute('aria-label', `Slide ${i + 1}`);
+  dot.addEventListener('click', () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  dotsContainer.children[currentSlide].classList.remove('active');
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+  dotsContainer.children[currentSlide].classList.add('active');
+}
+
+function nextSlide() { goToSlide(currentSlide + 1); }
+
+carouselTimer = setInterval(nextSlide, 5000);
+
+document.getElementById('hero').addEventListener('mouseenter', () => clearInterval(carouselTimer));
+document.getElementById('hero').addEventListener('mouseleave', () => { carouselTimer = setInterval(nextSlide, 5000); });
+
+/* ---- Modals ---- */
+function openModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.modal-close').focus();
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+  backdrop.addEventListener('click', (e) => {
+    if (e.target === backdrop) closeModal(backdrop.id);
+  });
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-backdrop.open').forEach(m => closeModal(m.id));
+    if (mobileNav.classList.contains('open')) {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+});
+
+/* Keyboard nav for cards */
+document.querySelectorAll('[role="button"]').forEach(card => {
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+  });
+});
+
+/* ---- Modal tabs ---- */
+function switchTab(btn, tabId) {
+  const modal = btn.closest('.modal');
+  modal.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+  modal.querySelectorAll('.modal-tab-content').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+
+/* ---- Scroll fade-in ---- */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+/* ---- Contact form ---- */
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('name').value;
+  const msg = document.getElementById('message').value;
+  const text = encodeURIComponent(`Olá! Sou ${name} e gostaria de entrar em contato.\n\n${msg}`);
+  window.open(`https://wa.me/5511961933599?text=${text}`, '_blank');
+});
+</script>
+
+</body>
+</html>
